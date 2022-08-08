@@ -22,6 +22,7 @@ header h1{
     font-family: 'Tangerine', serif;
     font-size: 48px;
     text-shadow: 4px 4px 4px #aaa;
+    font-size: 5vw;
 }
 
 nav{
@@ -31,16 +32,35 @@ padding-bottom: 0.5%;
 }
 nav a{
     margin-right: 3%;
+    margin-left: 25rem;
+    display: inline-block;
     flex-wrap: nowrap;
+    font-size: larger;
     text-decoration: none;
     color: white;
-    margin-left: 25rem;
-    font-size: larger;
     background: rgb(43, 41, 41)	;
     color:#fff;
     -moz-box-shadow:0 3px 10px 0 rgb(22, 21, 21);
     -webkit-box-shadow:0 3px 10px 0 rgb(76, 71, 72);
     text-shadow:0px 0px 5px rgb(207, 197, 200);
+}
+
+@media  (max-width: 700px){
+  .nav{
+    background-color: black;
+    padding-bottom: 0.5%;
+    display: flex;
+    align-items: center;
+    
+    }
+  }
+  @media (max-width: 700px){
+    .nav a{
+      
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: larger;}
 }
 
 nav ul{
@@ -111,6 +131,7 @@ article p{
    .zap{
      width: 25%;
      margin-left: 38%;
+     max-width: 25%;
  }
 
  .contents li {
